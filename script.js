@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         input.checked = false;
 
         input.addEventListener('change', () => {
-            btnSound.pause();
             btnSound.currentTime = 0;
             btnSound.play();
 
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         input.checked = false;
 
         input.addEventListener('change', () => {
-            btnSound.pause();
             btnSound.currentTime = 0;
             btnSound.play();
             
