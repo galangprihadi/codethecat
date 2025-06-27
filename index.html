@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Code the Cat</title>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        Player Data
+        <div class="input-box">
+            <input type="text" required="required" autocomplete="off" id="name">
+            <span>Name</span>
+        </div>
+        <div class="input-box">
+            <input type="number" required="required" autocomplete="off" id="age">
+            <span>Age</span>
+        </div>
+
+        <div class="radio-gender">
+            <span>Gender</span>
+            <div class="radio-box">
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="radio-box">
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+            </div>
+        </div>
+        
+        <div class="radio-game">
+            <span>Game Type</span>
+            <div class="radio-box">
+                <input type="radio" name="gameType" id="groupA" value="groupA">
+                <label for="groupA">Group A</label>
+            </div>
+            <div class="radio-box">
+                <input type="radio" name="gameType" id="groupB" value="groupB">
+                <label for="groupB">Group B</label>
+            </div>
+            <div class="radio-box">
+                <input type="radio" name="gameType" id="free" value="free">
+                <label for="free">Free</label>
+            </div>
+        </div>
+
+        <button id="startButton">Start</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

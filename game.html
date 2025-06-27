@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Code the Cat</title>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="stylesheet" href="rpgGame.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+    <!-- GAME PANEL -->
+    <div class="game-container"><canvas class="game-canvas"></canvas></div>
+
+    <!-- CONTROL PANEL -->
+    <div class="control-wrap"></div>
+
+    <!-- MENU PANEL -->
+    <div class="menu-container">
+        <button class="active" onclick="rpg.gameInput.setInput(0)" style= "background-image: url(images/btnTap.svg)"></button>
+        <button onclick="rpg.gameInput.setInput(1)" style= "background-image: url(images/btnScroll.svg)"></button>
+        <button onclick="rpg.gameInput.setInput(2)" style= "background-image: url(images/btnFlick.svg)"></button>
+        <button onclick="rpg.gameInput.setInput(3)" style= "background-image: url(images/btnTui.svg)"></button>
+        <button onclick="rpg.fullScreen()" class="fullScreen"><i class="fa-solid fa-expand"></i></button>
+        <button onclick="rpg.backToHome()" class="exit"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <!-- DASHBOARD PANEL -->
+    <div class="dashboard-container"></div>
+
+    <!-- NAVIGATION PANEL -->
+    <div class="navigation-container"></div>
+
+    <script src="RpgEngine-3.1.js"></script>
+    <script src="RpgInput-3.1.js"></script>
+    <script src="RpgDashboard-3.0.js"></script>
+    <script src="GameSetting.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,204 @@
+:root {
+
+    --color-background: #333333;
+    
+    --color-lightGreen: #d9e5b2;
+    --color-darkGray: #333333;
+    --color-red: #dd4b39;
+    --color-orange: #FF7F50;
+    --color-green: #8b9a6f;
+    --color-yellow: #FFD700;
+
+    --font-size-2: 15px;
+    --font-size-3: 20px;
+    --font-size-4: 25px;
+    --font-size-5: 30px;
+}
+
+* {
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    user-select: none;
+}
+
+body {
+    background: var(--color-background);
+    margin: 20px 35px;
+    overflow: hidden;
+}
+
+
+/* ======================================================================  FORM CONTAINER */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    border-radius: 30px;
+
+    gap: 30px;
+
+    color: var(--color-lightGreen);
+    font-size: var(--font-size-3);
+
+    background-color: var(--color-darkGray);
+    border: 2px solid var(--color-lightGreen);
+}
+
+
+/* ======================================================================  TEXT INPUT */
+
+.input-box {
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid var(--color-lightGreen);
+    border-radius: 30px;
+    outline: none;
+    background-color: var(--color-darkGray);
+    color: var(--color-lightGreen);
+    font-size: var(--font-size-3);
+}
+
+.input-box input[type="number"]::-webkit-outer-spin-button,
+.input-box input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-box input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.input-box input:valid,
+.input-box input:focus{
+    background-color: var(--color-darkGray);
+    color: var(--color-lightGreen);
+}
+
+.input-box span {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    padding: 0 5px;
+    pointer-events: none;
+    font-size: var(--font-size-3);
+    color: var(--color-lightGreen);
+    transition: 0.5s;
+    opacity: 0.2;
+}
+
+.input-box input:valid ~ span,
+.input-box input:focus ~ span {
+    color: var(--color-orange);
+    font-size: var(--font-size-2);
+    padding: 0 5px;
+    background-color: var(--color-darkGray);
+    transform: translateX(5px) translateY(-22px);
+    opacity: 1;
+}
+
+
+/* ======================================================================  RADIO INPUT */
+
+.radio-gender {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    column-gap: 15px;
+    margin-top: 20px;
+    font-size: var(--font-size-2);
+}
+
+.radio-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-top: 20px;
+    font-size: var(--font-size-2);
+}
+
+.radio-gender span, .radio-game span {
+    position: absolute;
+    transform: translateY(-40px);
+    color: var(--color-orange);
+}
+
+.radio-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 90px;
+    height: 45px;
+    border: 2px solid var(--color-lightGreen);
+    border-radius: 30px;
+    background-color: var(--color-darkGray);
+    color: var(--color-lightGreen);
+    transition: all 0.3s ease;
+}
+
+.radio-box input[type="radio"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.radio-box label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.radio-box.selected {
+    background-color: var(--color-lightGreen);
+    color: var(--color-darkGray);
+}
+
+.radio-box.selected label {
+    font-weight: bold;
+}
+
+
+/* ======================================================================  BUTTON */
+
+.form-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 45px;
+    background-color: var(--color-lightGreen);
+    border-radius: 25px;
+    border: none;
+    font-size: var(--font-size-3);
+    font-weight: bold;
+    color: var(--color-darkGray);
+    margin-top: 20px;
+}
+
+
