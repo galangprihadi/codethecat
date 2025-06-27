@@ -124,8 +124,8 @@ class RpgInput {
                 btn.addEventListener("touchstart", () => {
                 //btn.addEventListener("click", () => {
                     if (!rpg.isWalking && rpg.goalTarget != 0) {
-                        rpg.btnSound.currentTime = 0;
-                        rpg.btnSound.play();
+                        rpg.tapSound.currentTime = 0;
+                        rpg.tapSound.play();
 
                         switch (j) {
                             case 0: rpg.inputCommand[i] = "up"; break;
