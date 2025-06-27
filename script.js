@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         input.checked = false;
 
         input.addEventListener('change', () => {
-            btnSound.play();
             btnSound.currentTime = 0;
+            btnSound.play();
 
             radioGenderBox.forEach(box => {
                 box.classList.remove("selected");
@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         input.checked = false;
 
         input.addEventListener('change', () => {
-            btnSound.play();
             btnSound.currentTime = 0;
-
+            btnSound.play();
+            
             radioGameBox.forEach(box => {
                 box.classList.remove('selected');
             });
@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const playerData = `${name.value}|${age.value}|${genderType}|${gameType}`;
             localStorage.setItem("playerData", playerData);
 
-            btnPlay.play();
             btnPlay.currentTime = 0;
+            btnPlay.play();
             
             if (gameType === "groupA") {
                 setTimeout(()=>{

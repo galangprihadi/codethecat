@@ -181,6 +181,7 @@ class RpgInput {
                         btnMain.innerHTML = '<i class="fa-solid fa-xmark"></i>';
                     }
                     else {
+                        rpg.tapSound.currentTime = 0;
                         rpg.tapSound.play();
                         btnMain.innerHTML = "";
                     }
@@ -208,6 +209,7 @@ class RpgInput {
 
                 btn.addEventListener("click", () => {
                     if (!rpg.isWalking && rpg.goalTarget != 0) {
+                        rpg.tapSound.currentTime = 0;
                         rpg.tapSound.play();
 
                         switch (j) {
@@ -272,6 +274,7 @@ class RpgInput {
 
             btnUp.addEventListener("click", () => {
                 if (!rpg.isWalking && rpg.goalTarget != 0) {
+                    rpg.tapSound.currentTime = 0;
                     rpg.tapSound.play();
 
                     arrowIndex += 1;
@@ -286,6 +289,7 @@ class RpgInput {
 
             btnDown.addEventListener("click", () => {
                 if (!rpg.isWalking && rpg.goalTarget != 0) {
+                    rpg.tapSound.currentTime = 0;
                     rpg.tapSound.play();
 
                     arrowIndex -= 1;
@@ -316,6 +320,7 @@ class RpgInput {
 
             circle.addEventListener("click", (event) => {
                 if (!rpg.isWalking && rpg.goalTarget != 0) {
+                    rpg.tapSound.currentTime = 0;
                     rpg.tapSound.play();
                     
                     arrowIndex += 1;
