@@ -64,7 +64,7 @@ body {
     outline: none;
     background-color: var(--color-darkGray);
     color: var(--color-lightGreen);
-    font-size: var(--font-size-3);
+    font-size: var(--font-size-2);
 }
 
 .input-box input[type="number"]::-webkit-outer-spin-button,
@@ -89,7 +89,7 @@ body {
     left: 15px;
     padding: 0 5px;
     pointer-events: none;
-    font-size: var(--font-size-3);
+    font-size: var(--font-size-2);
     color: var(--color-lightGreen);
     transition: 0.5s;
     opacity: 0.2;
