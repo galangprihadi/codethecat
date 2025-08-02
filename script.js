@@ -53,29 +53,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     startButton.addEventListener("click", () => {
-        if (name.value && age.value && genderType != "" && gameType != "") {
+        // if (name.value && age.value && genderType != "" && gameType != "") {
 
-            const playerData = `${name.value}|${age.value}|${genderType}|${gameType}`;
-            localStorage.setItem("playerData", playerData);
+        //     const playerData = `${name.value}|${age.value}|${genderType}|${gameType}`;
+        //     localStorage.setItem("playerData", playerData);
 
-            btnPlay.currentTime = 0;
-            btnPlay.play();
+        //     btnPlay.currentTime = 0;
+        //     btnPlay.play();
             
-            if (gameType === "groupA") {
-                setTimeout(()=>{
-                    window.location.href = "groupA.html";
-                }, 1000);
-            }
-            else if (gameType === "groupB") {
-                setTimeout(()=>{
-                    window.location.href = "groupB.html";
-                }, 1000);
-            }
-            else if (gameType === "free") {
-                setTimeout(()=>{
-                    window.location.href = "game.html";
-                }, 1000);
-            }
-        }
+        //     if (gameType === "groupA") {
+        //         setTimeout(()=>{
+        //             window.location.href = "groupA.html";
+        //         }, 1000);
+        //     }
+        //     else if (gameType === "groupB") {
+        //         setTimeout(()=>{
+        //             window.location.href = "groupB.html";
+        //         }, 1000);
+        //     }
+        //     else if (gameType === "free") {
+        //         setTimeout(()=>{
+        //             window.location.href = "game.html";
+        //         }, 1000);
+        //     }
+        // }
+
+        window.location.href = "game.html";
     });
 });
